@@ -32,12 +32,12 @@ def mainMenuLoop():
     while i > 0:
         usrCmd = input('...:|> ')
         
-        if usrCmd.startswith('sudo'):
+        if usrCmd.startswith('god'):
             splitCmd = usrCmd.split()
             if splitCmd[1] == 'exit':
                 return 0
             elif splitCmd[1] == 'help':
-                print('List of commands not yet implemented.')
+                print('List of god commands not yet implemented.')
 
 
 def mainMenu():
