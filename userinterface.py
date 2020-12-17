@@ -6,24 +6,20 @@ Created on Thu Dec 17 00:34:26 2020
 @author: joonahuh
 """
 
+import processMenu as pm
+
 def userInterface():
     i = 1
     while i > 0:
-        print('''####################################
-#            VENTUREOUT            #
-#                                  #
-#      Start ...:|> start          #
-#      Exit  ...:|> exit           #
-#      Dev   ...:|> devstart       #
-#                                  #
-####################################''')
-        usrCmd = input('Input your command: ')
+        pm.print_menu(0)
+        usrCmd = input('...:|> ')
     
         if usrCmd == 'exit':
             return 0
         elif usrCmd == 'devstart':
             print('Error while loading content. Implementation still unfinished.')
-        elif usrCmd == 'start':          
+        elif usrCmd == 'start':     
+            print('Application started.')
             return mainMenu()
         
         
